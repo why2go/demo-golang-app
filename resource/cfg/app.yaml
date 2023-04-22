@@ -1,0 +1,47 @@
+app:
+  name: demo
+  author: ziyi
+  version: v0.0.1
+  description: demo server
+  changeLog: ""
+
+gin:
+  host: "localhost"
+  port: 8080
+  mode: release # debug
+  cors:
+    origins: ["*"]
+    methods: ["*"]
+    headers: ["*"]
+
+# grpc:
+#   host: "localhost"
+#   port: 8081
+#   connTimeoutMS: 5000
+#   writeBufferSize: 1024 * 1024 * 4
+#   readBufferSize: 1024 * 1024 * 4
+#   interceptors:
+#     - incoming
+#     - outgoing
+
+
+# gorm:
+#   dbType: mysql
+#   dsn:
+#   connMaxIdleTime: 30s
+#   connMaxLifetime: 5m
+#   maxIdleConns: 5
+#   maxOpenConns: 20
+#   logger:
+#     logMode: info
+#     ignoreErrRecordNotFound: true
+#     slowThresholdMS: 500
+
+zerolog:
+  globalLevel: debug
+  durationFieldUnit: ms
+  # enableRotation: false
+  # rotationConfig:
+  #   filename:
+  #   maxsize:
+  #   maxage:

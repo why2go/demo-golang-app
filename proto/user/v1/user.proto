@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package user.v1;
+
+message User {
+    string name = 1;
+    uint32 age = 2;
+}
+
+message RetrieveDemoUserRequest {
+}
+
+message RetrieveDemoUserResponse {
+    User user = 1;
+}
+
+service UserService {
+    rpc RetrieveDemoUser(RetrieveDemoUserRequest) returns (RetrieveDemoUserResponse){}
+}
