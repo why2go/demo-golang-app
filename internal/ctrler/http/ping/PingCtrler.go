@@ -29,6 +29,6 @@ func init() {
 
 func (ctrler *pingCtrler) Ping(c *gin.Context) {
 	logger := ctrler.logger.With().Str("request-id", c.GetString("request-id")).Logger()
-	logger.Info().Msg("pong would be sent")
+	logger.Debug().Msg("pong would be sent")
 	c.String(http.StatusOK, "%s", "pong")
 }

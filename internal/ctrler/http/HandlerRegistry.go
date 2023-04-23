@@ -15,6 +15,6 @@ func RegisterHandlers() {
 
 	apiV1 := api.Group("v1")
 	{
-		apiV1.POST("/echo", v1.UserCtrler.GetDemoUser)
+		apiV1.POST("/demo_user", v1.UserCtrler.GetDemoUser)
 	}
 }

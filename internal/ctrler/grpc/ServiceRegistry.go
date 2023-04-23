@@ -2,11 +2,12 @@
 package grpc
 
 import (
-	"demo/gen/user/v1/userv1connect"
+	genv1 "demo/gen/user/v1"
+	grpcv1 "demo/internal/ctrler/grpc/v1"
 
 	"github.com/why2go/gostarter/grpcstarter"
 )
 
 func RegisterGrpcService() {
-	grpcstarter.RegisterService(userv1connect.UserServiceHandler)
+	grpcstarter.RegisterService(&genv1.UserService_ServiceDesc, grpcv1.UserService)
 }
