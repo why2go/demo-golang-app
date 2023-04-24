@@ -1,6 +1,6 @@
-FROM golang:1.18-alpine AS builder
+FROM golang:1.20-alpine AS builder
 ENV GOPROXY='https://goproxy.cn' \
-    GOPRIVATE='xxx.xxx.com' \
+    # GOPRIVATE='xxx.xxx.com' \
     CGO_ENABLED=0
 # ARG TOKEN
 # RUN echo "machine xxx.xxx.com login anonymous password ${TOKEN}" > ~/.netrc
