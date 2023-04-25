@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/gin-gonic/gin v1.8.2
 	github.com/rs/zerolog v1.28.0
-	github.com/why2go/gostarter v0.0.22
+	github.com/why2go/gostarter v0.0.23
 	go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin v0.40.0
 	google.golang.org/grpc v1.49.0
 	google.golang.org/protobuf v1.28.1

@@ -1,3 +1,3 @@
 - [ ] 将常用的操作写成makefile
 - [ ] 研究一下buf对于grpc的封装
-- [ ] 
+- [ ] 对gin做otel适配

@@ -16,7 +16,7 @@ RUN go build -o ./bin/main ./cmd/
 
 FROM alpine:latest
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
-RUN apk update && apk upgrade
+RUN apk update && apk upgrade && apk add --no-cache curl
 WORKDIR /app
 RUN mkdir ./bin
 COPY --from=builder /src/bin ./bin
