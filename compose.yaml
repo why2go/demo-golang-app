@@ -14,6 +14,13 @@ services:
     ports:
       - 8080:8080
       - 8081:8081
+    environment:
+      # - PRODUCT_CATALOG_SERVICE_PORT
+      # - FEATURE_FLAG_GRPC_SERVICE_ADDR
+      - OTEL_EXPORTER_OTLP_ENDPOINT
+      - OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE
+      - OTEL_RESOURCE_ATTRIBUTES
+      # - OTEL_SERVICE_NAME=productcatalogservice
     depends_on:
       - mariadb
       - jaeger
